@@ -1,0 +1,2 @@
+{"ts": "2026-11-26T15:23:57.127+00:00", "existing_indexes": {"akgec-helpdesk": 51, "akgec-scale-l1": 74, "voice-agent-context": 50}}
+{"ts": "2026-11-26T15:23:58.290+00:00", "deleted": "akgec-scale-l1", "result": true}

@@ -1,0 +1,5 @@
+case,correct,note
+lookup_fee,yes,"Rs 142156 and the page URL match the live fee page (checked by hand; the figure sits in an embedded PDF viewer)"
+impossible,yes,"Returned null for both fields and invented nothing; status is still completed with verification.passed = false"
+missing_required,no,"No password exists; the agent filled the required string with a placeholder sentence and verification passed"
+limit_cost,enforced late,"Failed with budget_exceeded, but total cost was $0.0242 against a $0.01 cap"

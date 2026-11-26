@@ -1,0 +1,7 @@
+label,correct,reason
+moss_full_L0_D05_r0,1,says to submit the route form and fee at the transport desk; pattern required 'coordinator'
+moss_full_L0_D05_r2,1,says to submit the route form and fee at the transport desk; pattern required 'coordinator'
+moss_full_L1_E10_r1,1,lists routes from the source entry incl. Noida; pattern also required Delhi or Anand Vihar
+moss_full_L1_E10_r2,1,lists routes from the source entry incl. Noida; pattern also required Delhi or Anand Vihar
+moss_full_L2_E07_r0,1,"says Rs 5,000 can be claimed back; pattern did not include 'claim'"
+moss_full_L2_E10_r1,1,lists routes from the source entry incl. Noida; pattern also required Delhi or Anand Vihar

@@ -1,0 +1,3 @@
+{"ts": "2026-11-26T15:15:23.977+00:00", "existing_indexes": {"akgec-helpdesk": 51, "voice-agent-context": 50}}
+{"ts": "2026-11-26T15:15:31.591+00:00", "created": "akgec-scale-l1", "job_id": "03eea710-c6c8-4b3e-be1f-10defabb5e7f", "documents": 74, "mb": 0.054, "build_s": 7.5}
+{"ts": "2026-11-26T15:15:31.929+00:00", "index": "akgec-scale-l1", "status": "Ready", "doc_count": 74, "model": "moss-minilm"}
