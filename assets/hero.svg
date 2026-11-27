@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="t d">
+  <title id="t">Moss Inference, stress-tested for voice agents</title>
+  <desc id="d">At a 150K-token knowledge base, retrieval reaches the first token in 150 milliseconds and the full prompt in 629 milliseconds.</desc>
+  <style>
+    text { font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .title { font-size: 34px; font-weight: 800; fill: #ffffff; }
+    .sub { font-size: 16px; fill: #a9b4c2; }
+    .lane { font-size: 14px; font-weight: 600; fill: #e6edf3; }
+    .ms { font-size: 22px; font-weight: 800; fill: #ffffff; }
+    .note { font-size: 12px; fill: #7d8998; }
+    .bar { transform-box: fill-box; transform-origin: left center; }
+    /* bars play in a 4 s loop at 1/4 speed: 150 ms = 0.6 s (15%), 629 ms = 2.5 s (62.9%) */
+    .fast { animation: fast 4s linear infinite; }
+    .slow { animation: slow 4s linear infinite; }
+    .fast-ms { animation: fast-ms 4s linear infinite; }
+    .slow-ms { animation: slow-ms 4s linear infinite; }
+    .wave rect { transform-box: fill-box; transform-origin: center; animation: wave 1.2s ease-in-out infinite; }
+    @keyframes fast { 0% { transform: scaleX(0); } 15%, 100% { transform: scaleX(1); } }
+    @keyframes slow { 0% { transform: scaleX(0); } 62.9%, 100% { transform: scaleX(1); } }
+    @keyframes fast-ms { 0%, 14% { opacity: 0; } 17%, 100% { opacity: 1; } }
+    @keyframes slow-ms { 0%, 62% { opacity: 0; } 66%, 100% { opacity: 1; } }
+    @keyframes wave { 0%, 100% { transform: scaleY(.3); } 50% { transform: scaleY(1); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+
+  <rect width="900" height="360" rx="18" fill="#0d1117"/>
+  <rect x="1" y="1" width="898" height="358" rx="17" fill="none" stroke="#30363d" stroke-width="2"/>
+
+  <text class="title" x="40" y="66">Moss Inference, stress-tested</text>
+  <text class="sub" x="40" y="94">Full prompt vs retrieval for a Hinglish voice helpdesk · measured, logged, reproducible</text>
+
+  <g class="wave" fill="#3fb950">
+    <rect x="740" y="48" width="8" height="28" rx="4" style="animation-delay:0s"/>
+    <rect x="756" y="36" width="8" height="52" rx="4" style="animation-delay:.15s"/>
+    <rect x="772" y="44" width="8" height="36" rx="4" style="animation-delay:.3s"/>
+    <rect x="788" y="30" width="8" height="64" rx="4" style="animation-delay:.45s"/>
+    <rect x="804" y="42" width="8" height="40" rx="4" style="animation-delay:.6s"/>
+    <rect x="820" y="52" width="8" height="20" rx="4" style="animation-delay:.75s"/>
+  </g>
+
+  <line x1="40" y1="124" x2="860" y2="124" stroke="#21262d" stroke-width="2"/>
+  <text class="note" x="40" y="150">TIME TO FIRST TOKEN · p50 · 150K-token knowledge base · moss/fastlane-1</text>
+
+  <text class="lane" x="40" y="188">Retrieval (Moss index)</text>
+  <rect x="40" y="198" width="665" height="26" rx="8" fill="#161b22"/>
+  <rect class="bar fast" x="40" y="198" width="159" height="26" rx="8" fill="#eb6834"/>
+  <text class="ms fast-ms" x="215" y="219">150 ms</text>
+
+  <text class="lane" x="40" y="258">Whole knowledge base in the prompt</text>
+  <rect x="40" y="268" width="665" height="26" rx="8" fill="#161b22"/>
+  <rect class="bar slow" x="40" y="268" width="665" height="26" rx="8" fill="#2a78d6"/>
+  <text class="ms slow-ms" x="725" y="289">629 ms</text>
+
+  <text class="note" x="40" y="330">Replay at ¼ speed. The catch: retrieval also missed 4 of 80 answers that the full prompt got right.</text>
+</svg>
